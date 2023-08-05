@@ -914,7 +914,7 @@ read_cfg:
 
 			if (n->len > 12) {
 				uint8_t d = n->data[12];
-				rtb_cfg.uart_flow_ctrl = (d & 0x4) ? 1 : 0;
+				rtb_cfg.uart_flow_ctrl = 0;
 				RS_INFO("uart flow ctrl: %u",
 					rtb_cfg.uart_flow_ctrl);
 			}
